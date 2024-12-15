@@ -50,7 +50,7 @@ const ExpertForm = () => {
     const formDataToSend = new FormData();
     formDataToSend.append("name", formData.name);
     if (formData.profilePicture) {
-      formDataToSend.append("profile_picture", formData.profilePicture);
+      formDataToSend.append("profilePicture", formData.profilePicture);
     }
     formDataToSend.append("about", formData.about);
     formDataToSend.append("experience", formData.experience);
@@ -60,9 +60,7 @@ const ExpertForm = () => {
     formDataToSend.append("twitter", formData.socialMedia.twitter);
     formDataToSend.append("linkedin", formData.socialMedia.linkedin);
     formDataToSend.append("category", formData.category.toLowerCase());
-    if (formData.profilePicture) {
-      formDataToSend.append("profilePicture", formData.profilePicture);
-    }
+
     // Debug: Log FormData entries
     for (const pair of formDataToSend.entries()) {
       console.log(`${pair[0]}: ${pair[1]}`);
