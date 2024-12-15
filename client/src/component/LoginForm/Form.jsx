@@ -27,16 +27,6 @@ function Form({ route, method }) {
       if (method === "register") {
         // localStorage.setItem("localStorageData", JSON.stringify(res.data));
         console.log(res);
-        // localStorage.setItem(ACCESS_TOKEN, res.data.access);
-        // localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
-        // localStorage.setItem("id", res.data.id);
-        // localStorage.setItem("username", res.data.username);
-        // localStorage.setItem("email", res.data.email);
-        // const userId = res.data.id;
-        // const userEmail = res.data.email;
-
-        // console.log(res.data);
-        // console.log(userId, userEmail, username);
 
         navigate("/expertform");
       } else {

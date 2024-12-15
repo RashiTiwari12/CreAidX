@@ -14,7 +14,7 @@ const ExpertsList = () => {
   useEffect(() => {
     const fetchExperts = async () => {
       try {
-        const res = await axios.get("/experts");
+        const res = await axios.get("/api/experts");
         setExperts(res.data); // Assuming res.data contains the list of experts
         console.log(experts, "data recieved", res);
       } catch (error) {

@@ -69,16 +69,12 @@ const ExpertForm = () => {
     }
 
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/experts",
-        formDataToSend,
-        {
-          headers: {
-            // "Content-Type": "application/json",
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      const response = await axios.post("/api/experts", formDataToSend, {
+        headers: {
+          // "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
+        },
+      });
       alert("Form submitted successfully!");
       navigate("/experts");
     } catch (error) {
