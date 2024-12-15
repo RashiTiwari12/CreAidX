@@ -5,8 +5,12 @@ import axios from "axios";
 const apiUrl = "";
 const ACCESS_TOKEN = "access";
 const REFRESH_TOKEN = "refresh";
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
+  baseURL: "https://creaidx.onrender.com", // Your deployed backend URL
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 api.interceptors.request.use(
