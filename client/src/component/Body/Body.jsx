@@ -28,7 +28,7 @@ const Body = () => {
       element: <ExpertForm />,
     },
     {
-      path: "/experts",
+      path: "/api/experts",
       element: <ExpertsList />,
     },
     {

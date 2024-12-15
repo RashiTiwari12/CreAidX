@@ -5,7 +5,7 @@ import ExpertSlide from "../ExpertsSlide/ExpertSlide";
 const Header = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/experts");
+    navigate("/api/experts");
   };
   return (
     <>
